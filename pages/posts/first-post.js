@@ -1,15 +1,20 @@
 import Link from "next/link";
+import Head from "next/head";
+import Layout from "../../components/layout";
 
 const FirstPost = () => {
   return (
-    <div>
+    <Layout>
+      <Head>
+        <title>First Post</title>
+      </Head>
       <h1>First Post</h1>
       <h2>
         <Link href="/">
-          <a>Goto Homepage</a>
+          <a>Back to Homepage</a>
         </Link>
       </h2>
-    </div>
+    </Layout>
   );
 };
 
